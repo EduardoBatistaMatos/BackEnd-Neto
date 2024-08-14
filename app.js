@@ -15,6 +15,12 @@ app.get('/eduardo', (req, res) => {
     res.send('<h3> Rota Sobre Encontrada! <br> Saiba mais sobre a Nossa Empresa </h3>');
 
 })
+app.get('/contato', (req, res) => {
+    console.log('Rota Contato Encontrada!!!');
+    res.send('<h3> Rota Contato Encontrada! <br> Entre em contato conosco </h3>');
+
+})
+
 //servidor rodando
 
 app.listen(port, () => {
