@@ -10,8 +10,14 @@ app.get('/', (req, res) => {
 
 })
 
+app.get('/eduardo', (req, res) => {
+    console.log('Rota Sobre Encontrada!!!');
+    res.send('<h3> Rota Sobre Encontrada! <br> Saiba mais sobre a Nossa Empresa </h3>');
+
+})
 //servidor rodando
 
 app.listen(port, () => {
     console.log(`Aplicativo Rodando na Porta ${port}`);
 })   
+
